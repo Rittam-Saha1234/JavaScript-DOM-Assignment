@@ -1,0 +1,12 @@
+Q.  Explain the concept of Event Bubbling in the DOM ?
+    => Event bubbling in the DOM is a process where an event starts from the target element (where it was triggered) and then propagates upwards through its parent elements, all the way to the root of the document.
+
+        -> How Event Bubbling Works:
+                *When an event occurs (e.g., a click on a button), it first triggers on the target element.
+                *Then, it "bubbles" up through the parent elements (like a <div>, <body>, etc.), triggering their event listeners if present.
+
+        ->Example:
+                *If you click on a button inside a <div>, the event first affects the button and then moves up to the <div>, then to the <body>, and so on.
+
+        ->Usage:
+                *Event bubbling is useful for techniques like event delegation, where you can handle events at a parent level instead of on individual child elements, improving efficiency.

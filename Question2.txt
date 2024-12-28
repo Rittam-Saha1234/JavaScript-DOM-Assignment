@@ -1,0 +1,13 @@
+Q. Explain the concept of event delegation and provide a scenario where it is beneficial ?
+    =>Event delegation is a JavaScript technique where a single event listener is attached to a parent element, 
+    allowing it to handle events triggered by its child elements. 
+    This works due to event bubbling, where events propagate from the target element up to the parent elements in the DOM.
+
+        ->Benefits of Event Delegation:
+            *Improved Performance: Reduces the need for multiple event listeners.
+            *Simplified Code: One listener can handle events for many child elements.
+            *Handles Dynamic Content: Works with elements added to the DOM after the page loads.
+
+        ->Scenario:
+            In a dynamic list, instead of attaching a click event to every list item, attach a single event listener to the parent <ul> element. 
+            This way, it handles clicks on all current and future <li> items efficiently.

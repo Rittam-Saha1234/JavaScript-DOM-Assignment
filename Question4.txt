@@ -1,0 +1,16 @@
+Q. Explain the purpose of the addEventListener method in JavaScript and how it facilitates event handling in the DOM ?
+    => The addEventListener method in JavaScript is used to attach event listeners to elements in the DOM. 
+    It allows developers to specify a function (event handler) that will be executed when a specified event (like click, keydown, submit) occurs on the element.
+
+        ->Purpose:
+            *Event Handling: It enables elements to respond to user actions, such as clicks, typing, or scrolling.
+            *Multiple Handlers: Allows multiple event listeners for the same event type on a single element, unlike the older onclick method.
+            *Control: Provides options to control event behavior, like preventing default actions or controlling event propagation (bubbling/capturing).
+
+        ->Syntax:
+            *element.addEventListener('eventType', eventHandler, useCapture);
+
+        ->Example:
+            *button.addEventListener('click', function() {
+                alert('Button clicked!');
+            });
